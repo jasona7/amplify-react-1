@@ -7,6 +7,7 @@ import ThreeIdResolver from '@ceramicnetwork/3id-did-resolver'
 import { EthereumAuthProvider, ThreeIdConnect } from '@3id/connect'
 import { DID } from 'dids'
 import { IDX } from '@ceramicstudio/idx'
+import logo from './blockchain-wallet-logo.jpg'
 
 const endpoint = "https://ceramic-clay.3boxlabs.com"
 
@@ -71,6 +72,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={logo} alt="Integrblock logo" class="center" />
       <input placeholder="Name" onChange={e => setName(e.target.value)} />
       <input placeholder="Profile Image" onChange={e => setImage(e.target.value)} />
       <button onClick={updateProfile}>Set Profile</button>
